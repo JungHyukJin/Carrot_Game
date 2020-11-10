@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  text-align: center;
+  background-color: whitesmoke;
+  padding-top: 40px;
+  user-select: none;
+  outline: none;
+}
+
+.game {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  background: url(img/background.png) center/cover;
+  border-radius: 20px;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.game__button:hover {
+  transform: scale(1.1);
+}
+
+.game__button {
+  transition: transform 300ms ease;
+  width: 60px;
+  height: 60px;
+  background-color: whitesmoke;
+  border: 4px solid black;
+  border-radius: 10px;
+  font-size: 34px;
+  color: salmon;
+}
+
+.game__timer {
+  margin-top: 10px;
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 30px;
+  border: 3px solid black;
+  visibility: hidden;
+}
+
+.game__score {
+  margin-top: 10px;
+  line-height: 40px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background-color: sandybrown;
+  text-align: center;
+  border-radius: 40%;
+  border: 3px solid black;
+  visibility: hidden;
+}
+
+.game__field {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pop-up {
+  display: block;
+  margin: auto;
+  padding: 30px;
+  width: 450px;
+  height: 200px;
+  background-color: #00000090;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  transform: translateY(-140%);
+}
+
+.pop-up--hide {
+  display: none;
+}
+
+.pop-up__refresh:hover {
+  transform: scale(1.1);
+}
+
+.pop-up__refresh {
+  transition: transform 300ms ease;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.pop-up__message {
+  margin-top: 15px;
+  display: block;
+  font-size: 40px;
+}
+
+.carrot,
+.bug {
+  transition: transform 100ms ease;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+}
