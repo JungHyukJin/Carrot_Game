@@ -125,3 +125,12 @@ body {
 .bug:hover {
   transform: scale(1.1);
 }
+
+.aboutGame {
+  font-size: 35px;
+  color: rgb(8, 8, 7);
+}
+
+.aboutGame_header {
+  margin-bottom: 0;
+}
